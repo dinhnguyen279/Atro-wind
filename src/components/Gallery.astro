@@ -1,0 +1,28 @@
+---
+import art1 from "/art1.jpg"
+import art2 from "/art2.jpg"
+import art3 from "/art3.jpg"
+import art4 from "/art4.jpg"
+---
+
+<div class="mt-12">
+        <h1 class="my-24 text-center text-xl">Latest Art Pieces</h1>
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-24 xl:mx-48 mx-5">
+            <div class="relative group cursor-pointer h-auto w-[250px] md:w-[400px] mx-auto">
+                <img src={art1} alt="art1" class="w-full object-cover z-10 transition-all group-hover:-translate-x-3 rounded-lg">
+                <div class="bg-black absolute -z-10 top-0 left-0 w-full h-full rounded-lg transition-all group-hover:translate-y-4 group-hover:translate-x-4"></div>
+            </div>
+            <div class="relative group cursor-pointer h-auto w-[250px] md:w-[400px] mx-auto">
+                <img src={art2} alt="art1" class="w-full object-cover z-10 transition-all group-hover:-translate-x-3 rounded-lg">
+                <div class="bg-black absolute -z-10 top-0 left-0 w-full h-full rounded-lg transition-all group-hover:translate-y-4 group-hover:translate-x-4"></div>
+            </div>
+            <div class="relative group cursor-pointer h-auto w-[250px] md:w-[400px] mx-auto">
+                <img src={art3} alt="art1" class="w-full object-cover z-10 transition-all group-hover:-translate-x-3 rounded-lg">
+                <div class="bg-black absolute -z-10 top-0 left-0 w-full h-full rounded-lg transition-all group-hover:translate-y-4 group-hover:translate-x-4"></div>
+            </div>
+            <div class="relative group cursor-pointer h-auto w-[250px] md:w-[400px] mx-auto">
+                <img src={art4} alt="art1" class="w-full object-cover z-10 transition-all group-hover:-translate-x-3 rounded-lg">
+                <div class="bg-black absolute -z-10 top-0 left-0 w-full h-full rounded-lg transition-all group-hover:translate-y-4 group-hover:translate-x-4"></div>
+            </div>
+        </div>
+</div>

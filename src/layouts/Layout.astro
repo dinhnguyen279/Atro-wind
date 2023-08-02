@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 interface Props {
 	title: string;
 }
-
+import "@fontsource-variable/josefin-sans"
 const { title } = Astro.props;
 ---
 
@@ -19,25 +19,16 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<main >
-			<Nav/>
+			<Nav client:load/>
 			<slot />
-			<!-- <footer class="text-center w-full">
-				<div>
-					Footer Here
-				</div>
-			</footer> -->
+			<footer class="mt-12 bg-black px-8 py-12 md:px-16 lg:px-32">
+				<div></div>
+			  </footer>
 		</main>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+  body {
+    font-family: "Josefin Sans Variable", sans-serif;
+  }
 </style>
